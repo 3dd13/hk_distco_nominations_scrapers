@@ -214,7 +214,8 @@ async function getUncontestedConstituencies() {
 }
 
 function getVoteResultConstituencies() {
-  const voteResultFileContent = fs.readFileSync('2015_result.txt', 'utf8');
+  // hand crafted from https://www.eac.hk/pdf/distco/ch/2015dc_report/2015dcereport_appendix5.pdf
+  const voteResultFileContent = fs.readFileSync('./data/input/2015_distco_result.txt', 'utf8');
   const contentLines = voteResultFileContent.split('\n');
   const constituencies = [];
   let currentConstituency = null;
