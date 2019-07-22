@@ -3,6 +3,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const _ = require('lodash');
 
+// year 2012 does not split individual from group voters
+// const url = "https://www.voterregistration.gov.hk/chi/statistic20123.html";
+
 const url = "https://www.voterregistration.gov.hk/chi/statistic20183.html";
 const englishUrl = url.replace('/chi/', '/eng/');
 
